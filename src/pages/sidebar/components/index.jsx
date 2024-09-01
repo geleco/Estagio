@@ -36,6 +36,7 @@ const Sidebar = () => {
         position="fixed"
         sx={{
           zIndex: theme.zIndex.drawer + 1,
+          backgroundColor: '#120a8f',
         }}
       >
         <Toolbar>
@@ -93,7 +94,7 @@ const Sidebar = () => {
             <ListItemText 
           primary="Usuário"
           primaryTypographyProps={{ 
-            style: { fontSize: '1.20rem' }
+            style: { fontSize: '1.1rem' }
           }}
           sx={{ ml: 1.5 }}/>
           </ListItem>
@@ -102,7 +103,7 @@ const Sidebar = () => {
             <ListItemText 
           primary="Produto"
           primaryTypographyProps={{ 
-            style: { fontSize: '1.20rem' }
+            style: { fontSize: '1.1rem' }
           }}
           sx={{ ml: 1.5 }}/>
           </ListItem>
@@ -111,7 +112,7 @@ const Sidebar = () => {
             <ListItemText 
           primary="Estoque"
           primaryTypographyProps={{ 
-            style: { fontSize: '1.20rem' }
+            style: { fontSize: '1.1rem' }
           }}
           sx={{ ml: 1.5 }}/>
           </ListItem>
@@ -120,7 +121,7 @@ const Sidebar = () => {
             <ListItemText 
           primary="Almoxarifado"
           primaryTypographyProps={{ 
-            style: { fontSize: '1.20rem' }
+            style: { fontSize: '1.1rem' }
           }}
           sx={{ ml: 1.5 }}/>
           </ListItem>
@@ -138,9 +139,6 @@ const Sidebar = () => {
         }}
       >
         <Toolbar />
-        <Typography paragraph>
-          Conteúdo da página.
-        </Typography>
       </main>
     </div>
   );
