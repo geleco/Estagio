@@ -13,8 +13,9 @@ import Tooltip from '@mui/material/Tooltip';
 import Avatar from '@mui/material/Avatar';
 import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
+import PersonIcon from '@mui/icons-material/Person';
+import { fontSize } from '@mui/system';
 
-const pages = ['Products', 'Pricing', 'Blog'];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 const drawerWidth = 240;
 
@@ -89,19 +90,29 @@ const Sidebar = () => {
         <Toolbar />
         <List>
           <ListItem button>
-            <ListItemText primary="Dashboard" />
+            <PersonIcon/>
+            <ListItemText 
+          primary="Usuário"
+          primaryTypographyProps={{ 
+            style: { fontSize: '1.20rem' }
+          }}
+          sx={{ ml: 1.5 }}/>
           </ListItem>
           <ListItem button>
-            <ListItemText primary="My Store" />
+            <ListItemText primary="Estoque" />
+          </ListItem>
+          <ListItem button>
+            <ListItemText primary="Produto" />
           </ListItem>
           <ListItem button>
             <ListItemText primary="Analytics" />
           </ListItem>
-          {pages.map((page) => (
-            <ListItem button key={page}>
-              <ListItemText primary={page} />
-            </ListItem>
-          ))}
+          <ListItem button>
+            <ListItemText primary="Analytics" />
+          </ListItem>
+          <ListItem button>
+            <ListItemText primary="Analytics" />
+          </ListItem>
         </List>
       </Drawer>
 
