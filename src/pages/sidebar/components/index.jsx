@@ -14,7 +14,6 @@ import Avatar from '@mui/material/Avatar';
 import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
 import PersonIcon from '@mui/icons-material/Person';
-import { fontSize } from '@mui/system';
 
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 const drawerWidth = 240;
@@ -99,16 +98,31 @@ const Sidebar = () => {
           sx={{ ml: 1.5 }}/>
           </ListItem>
           <ListItem button>
-            <ListItemText primary="Estoque" />
+            <PersonIcon/>
+            <ListItemText 
+          primary="Produto"
+          primaryTypographyProps={{ 
+            style: { fontSize: '1.20rem' }
+          }}
+          sx={{ ml: 1.5 }}/>
           </ListItem>
           <ListItem button>
-            <ListItemText primary="Produto" />
+            <PersonIcon/>
+            <ListItemText 
+          primary="Estoque"
+          primaryTypographyProps={{ 
+            style: { fontSize: '1.20rem' }
+          }}
+          sx={{ ml: 1.5 }}/>
           </ListItem>
           <ListItem button>
-            <ListItemText primary="Analytics" />
-          </ListItem>
-          <ListItem button>
-            <ListItemText primary="Analytics" />
+            <PersonIcon/>
+            <ListItemText 
+          primary="Almoxarifado"
+          primaryTypographyProps={{ 
+            style: { fontSize: '1.20rem' }
+          }}
+          sx={{ ml: 1.5 }}/>
           </ListItem>
           <ListItem button>
             <ListItemText primary="Analytics" />
